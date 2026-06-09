@@ -11,10 +11,10 @@ class Game:
         player = self.get_current_player()
         if self.board.make_move(x, y, player.symbol):
             if self.board.check_winner(player.symbol):
-                return f"{player.name} wins!"
+                return f"{player.name} wins!!!"
             elif self.board.is_full():
                 return "The game is a draw!"
             self.current_player = 1 - self.current_player
             return None
         else:
-            return "This move is not valid, try again."
+            return "This move is not valid, try again!."
