@@ -22,7 +22,7 @@ class Board:
                 return True
 
         # Check columns
-        for col in range(self.size):
+        for col in range( self.size):
             if all(self.board[row][col] == symbol for row in range(self.size)):
                 return True
 
