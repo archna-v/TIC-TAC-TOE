@@ -63,7 +63,7 @@ class TicTacToeUI:
             )
             cursor = connection.cursor()
 
-            player1 = self.players[0]
+            player1 =self.players[0]
             player2 = self.players[1]
             winner_name = winner if winner != "Draw" else "Draw"
 
